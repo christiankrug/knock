@@ -4,10 +4,14 @@ import sys
 import os
 NextURLNo = 0
 MaxProcesses = 20
-path = sys.argv[1]
-# Check if path exits
-if os.path.exists(path):
-    print "File exist"
+if (len(sys.argv)>1):
+    path = sys.argv[1]
+    # Check if path exits
+    if os.path.exists(path):
+        print "File exist"
+      
+else:
+    print "No file supplied"
     
 with open(path) as f:
     urllist = f.read().splitlines()
