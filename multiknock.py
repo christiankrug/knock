@@ -9,6 +9,9 @@ if (len(sys.argv)>1):
     # Check if path exits
     if os.path.exists(path):
         print "File exist"
+    else:
+        print "Please supply a legit file path"
+        quit()
       
 else:
     print "No file supplied"
