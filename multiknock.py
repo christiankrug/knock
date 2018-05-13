@@ -14,7 +14,7 @@ def StartNew():
 
    if NextURLNo < MaxUrls:
       proc = subprocess.Popen(['knockpy', '-c', urllist[NextURLNo]])
-      print ("Started to Process 	nr."+str(NextURLNo)+"/"+str(MaxUrls), urllist[NextURLNo])
+      print ("Started to Process nr."+str(NextURLNo)+"/"+str(MaxUrls), urllist[NextURLNo])
       NextURLNo += 1
       Processes.append(proc)
 
