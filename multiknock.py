@@ -1,8 +1,15 @@
 import time
 import subprocess
+import sys
+import os
 NextURLNo = 0
 MaxProcesses = 20
-with open("airlines.txt") as f:
+path = sys.argv[1]
+# Check if path exits
+if os.path.exists(path):
+    print "File exist"
+    
+with open(path) as f:
     urllist = f.read().splitlines()
 MaxUrls = len(urllist)
 Processes = []
