@@ -12,6 +12,7 @@ if (len(sys.argv)>1):
       
 else:
     print "No file supplied"
+    quit()
     
 with open(path) as f:
     urllist = f.read().splitlines()
