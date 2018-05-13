@@ -4,7 +4,7 @@ import sys
 import os
 NextURLNo = 0
 MaxProcesses = 20
-if (len(sys.argv)>0):
+if (len(sys.argv)>1):
     path = sys.argv[1]
     # Check if path exits
     if os.path.exists(path):
